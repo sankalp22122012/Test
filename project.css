@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://wallup.net/wp-content/uploads/2017/11/10/72641-world_map-map-dark-continents-748x468.jpg);
+    background-size: cover;
+    margin:0;
+}
+html{
+    min-height: 100%;
+}
+.earth{
+    background-color: white;
+    color: black;
+    font-size:8vw ;
+    font-weight: bolder;
+    margin: 0 auto;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    mix-blend-mode: screen;
+    opacity:0.7 ;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+}
+.sun{
+    background-color: rgba(0, 0, 0, 0.863);
+    width:100%;
+    overflow: hidden;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+.sun a{
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+   
+}
+.sun a:hover{
+    background-color: white;
+    color:rgba(0, 0, 0, 0.863) ;
+}
+.eqeual{
+      
+    background-size: cover;
+    color: honeydew;
+}
+.given{
+    margin: 30px;
+    background-color: rgb(71, 71, 71);
+        opacity: 0.8;
+}
+.given p, .given h1, .given h2{
+    margin: 5%;
+    font-weight: bold;
+    color: white;
+}
+.given p{
+    font-size: 1.5vw;
+}
+h1{
+    font-size:4vw
+}
+
+.countrieds{
+display: flex;
+}
+.cornntries{
+    flex: 32%;
+    padding: 5px;
+    position: relative;
+    width:50%;
+}
+.cornntries img{
+    height: 300px;
+    width: 400px;
+}
+.cornntries:hover .p1{
+    opacity: 1;
+}
+.p1{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: lightgreen;
+    border-radius: 13px;
+}
+.p2{
+    color: White;
+    font-size: 3vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
